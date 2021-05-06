@@ -1,0 +1,91 @@
+
+body{
+    background-color: black;
+}
+
+
+#containerProductos{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        margin: 200px;
+     border-color: rgb(167, 32, 162);
+    
+}
+
+.cero {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   border-color: rgb(167, 32, 162);
+  
+  
+  
+}
+
+.tittle{
+margin-left: 100px;
+    margin-top: 10px;
+    font-family: 'Girassol', cursive;
+    
+
+}
+.cajita {
+   
+  background-color: rgb(85, 7, 7);
+  border-radius: 50px;
+  margin: 20px;
+  margin-bottom: 50px;
+ 
+  
+  
+ 
+}
+
+img {
+  margin: 20px;
+  width: 200px;
+  box-shadow: black;
+  border-radius: 50px;
+  
+}
+.btn {
+  border-radius: 50px;
+  background-color: rgb(197, 119, 30);
+  display: flex;
+  color: beige;
+  margin-left: 78px;
+  margin-bottom: 10px;
+  font-family: 'Girassol', cursive;
+  
+  
+ 
+}
+span{
+    display: flex;
+    color:orange;
+    margin-bottom: 10px;
+   margin-left: 88px;
+   font-family: 'Girassol', cursive;
+  /* padding-bottom: 50px;  */
+}
+
+
+/* 
+<div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-50">
+            <a href="#!"><img class="card-img-top" src="imagenes/${lenceria.imagen}" alt="..." /></a>
+            <div class="">
+                <h4 class="card-title"><a href="#!">${lenceria.nombre}</a></h4>
+                <h5>$ ${lenceria.precio}</h5>
+                <p class="card-text">${lenceria.descripcion}</p>
+            </div>
+            <button class="btn btn-dark" onclick='agregarCarrito(${JSON.stringify(lenceria)})'>Comprar</button>   
+            <div class="card-footer"><small class="text-muted">★ ★ ★ ★ ☆</small></div>
+        </div>
+    </div>  */
