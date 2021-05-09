@@ -43,9 +43,9 @@ productos.forEach(lenceria =>{    // creo parametro "lenceria" que seria cada un
    
     `<div class="cajita" >
     <span class="tittle">${lenceria.nombre}</span>
-  <img src="imagenes/${lenceria.imagen}" alt="">
-  <button class="btn"  onclick='agregarCarrito(${JSON.stringify(lenceria)})'>Comprar</button>
-  <span>$ ${lenceria.precio}</span> </div>
+    <img src="imagenes/${lenceria.imagen}" alt="">
+    <span>Precio$ : ${lenceria.precio}</span> 
+    <button class="btn"  onclick='agregarCarrito(${JSON.stringify(lenceria)})'>Comprar</button></div>
 `} )
 
 document.getElementById('containerProductos').innerHTML = cardsTotales;
@@ -64,7 +64,8 @@ let agregarCarrito = (producto) =>{     //el parametro producto me lo invento pa
     arrayCarrito.forEach(element => {   // a la variable arrayCarrito le digo que me traiga cada elemento "producto = lenceria"
         productosSeleccionados += 
 
-        `<span>${element.nombre}</span>
+        `<img src="imagenes/${element.imagen} " alt="">
+        <span>${element.nombre}</span>
         <span>$.${element.precio}</span>
         <button onClick='borrarElemento(${element})'>X</button>
         </>` });
@@ -81,10 +82,17 @@ let agregarCarrito = (producto) =>{     //el parametro producto me lo invento pa
 
 
 
+        //cosas jquery, puedo elegir como en css
 
+// const h1 = $('#h1')
+// h1.click(()=> {
+//     event.preventDefault()
+//     const valorInput = = $
+// }
 
+// )
 
-
+        
 
 
 
