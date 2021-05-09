@@ -6,33 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <title>Mylingerie</title>
 
   <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/cero.css">
 </head>
+  
+  <!-- Core theme CSS (includes Bootstrap)-->
+
 
 <body>
-  <div class="container">
-
-    <div class="box">
- 
+  <nav class="navbar navbar-light bg-light">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        My Lingerie
+      </a>
+      <button  class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button">Carrito<small id="numeroCarrito">0</small></button> 
     </div>
     
-    <div class="box-c">
-      <span id="totalCarrito" class="carr">$ 0</span>
-      <img class="car" src="imagenes/carrito-de-compras.svg">
-      <!-- Button trigger modal -->
-<button type="button" class="btns btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Ver Carrito!
-</button>
+    <i class="fas fa-user"></>
+  </nav>
+  
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -44,10 +46,10 @@
       </div>
       <div id="modalProductos" class="modal-body">
         
-        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btns btn-secondary" data-bs-dismiss="modal">Close</button>
+        <span id="totalCarrito" class="carr">$ 0</span>
+        <button type="button" onclick="vaciarCarrito()" class="btns btn-primary">Vaciar</button>
         <button type="button" class="btns btn-primary">Pagar</button>
       </div>
     </div>
@@ -55,14 +57,11 @@
 </div>
 
 
-    </div>
-    
-    
-    
-    
 
-  </div>
-  
+    
+    
+    
+    
   
   
   
@@ -78,7 +77,8 @@
     </div> 
     
     <span id="totalCarrito"></span>
-    <p id="carritoDeCompras"></p>
+   
+    <!-- <p id="carritoDeCompras"></p> -->
     
 
     

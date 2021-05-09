@@ -1,16 +1,8 @@
 body {
   background-color: rgb(104, 24, 24);
 }
-h1 {
-  text-align: center;
-  color: rgb(11, 60, 133);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 77px;
-  margin-left:400px;
 
- 
-}
+
 
 #containerProductos {
   display: flex;
@@ -23,26 +15,7 @@ h1 {
   border-color: rgb(167, 32, 162);
 }
 
-.cero {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-color: rgb(167, 32, 162);
-}
 
-.tittle {
-  margin-left: 40px;
-  margin-top: 10px;
-  font-family: "Girassol", cursive;
-  font-size: 50px;
-}
-.cajita {
-  background-color: rgb(85, 7, 7);
-  border-radius: 50px;
-  margin: 10px;
-  margin-bottom: 50px;
-}
 
 img {
   margin: 0px;
@@ -70,50 +43,6 @@ span {
   padding-top: 0px;
   font-family: "Girassol", cursive;
   /* padding-bottom: 50px;  */
-}
-.container{
-  display: grid;
-  grid-template-columns: repeat(2,3fr) ;
-  align-content:center;
-  grid-template-rows: repeat(1,1fr);
-  /* grid-auto-rows: 3fr; */
-  grid-gap: 100px;
-  margin-top: 50px;
-  
-  
-}
-.box{
-  color: rgb(208, 226, 43);
-  padding-right: 50px;
-  /* background-color: rgb(29, 16, 175); */
-  text-align: center;
-  border-radius: 70px;
-  
-}
-.box-c{
- 
-display: grid;
-background-color: rgb(228, 228, 33);
-grid-template-columns: 1fr   ;
-align-items:center;
-margin-left: 510px;
-border-radius: 50px;
-}
-.car{
-  height: 60px;
- 
-}
-.carr{
-  align-content: center;
-  justify-content: normal;
-}
-.btns{
-  background-color: rgb(201, 221, 22);
-  border-radius: 100px;
-  height: 35px;
-  width: 100px;
-  margin-left: 60px;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {
