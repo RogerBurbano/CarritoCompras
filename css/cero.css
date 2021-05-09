@@ -93,7 +93,7 @@ span {
 .box-c{
  
 display: grid;
-background-color: rgb(17, 17, 15);
+background-color: rgb(228, 228, 33);
 grid-template-columns: 1fr   ;
 align-items:center;
 margin-left: 510px;

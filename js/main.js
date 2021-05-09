@@ -66,7 +66,7 @@ let agregarCarrito = (producto) =>{     //el parametro producto me lo invento pa
 
         `<img src="imagenes/${element.imagen} " alt="">
         <span>${element.nombre}</span>
-        <span>$.${element.precio}</span>
+        <span> $${element.precio}</span>
         <button onClick='borrarElemento(${element})'>X</button>
         </>` });
             
