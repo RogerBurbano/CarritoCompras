@@ -1,15 +1,10 @@
 body {
-  background-color: rgb(104, 24, 24);
+  background-color: rgb(10, 13, 22);
 }
-h1 {
-  text-align: center;
-  color: rgb(11, 60, 133);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 77px;
-  margin-left:400px;
-
- 
+nav {
+  background-color: rgb(8, 5, 2);
+  height: 100px;
+  margin-top: 5px;
 }
 
 #containerProductos {
@@ -19,31 +14,19 @@ h1 {
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
-  margin: 200px;
-  border-color: rgb(167, 32, 162);
+  margin: 100px;
 }
-
-.cero {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-color: rgb(167, 32, 162);
+.btns {
+  border-radius: 20%;
+  background-color: rgb(220, 117, 20);
+  font-family: "Reggae One", cursive;
+  /* position: fixed; */
 }
-
-.tittle {
-  margin-left: 40px;
-  margin-top: 10px;
-  font-family: "Girassol", cursive;
-  font-size: 50px;
+#numeroCarrito {
+  padding: 1px;
+  border-radius: 100%;
+  margin-left: 5px;
 }
-.cajita {
-  background-color: rgb(85, 7, 7);
-  border-radius: 50px;
-  margin: 10px;
-  margin-bottom: 50px;
-}
-
 img {
   margin: 0px;
   padding: 5px;
@@ -62,78 +45,102 @@ img {
   height: 30px;
   /* font-family: 'Girassol', cursive; */
 }
-span {
+.tittle {
   display: flex;
   color: rgb(155, 50, 24);
   margin-bottom: 10px;
   margin-left: 50px;
   padding-top: 0px;
-  font-family: "Girassol", cursive;
-  /* padding-bottom: 50px;  */
-}
-.container{
-  display: grid;
-  grid-template-columns: repeat(2,3fr) ;
-  align-content:center;
-  grid-template-rows: repeat(1,1fr);
-  /* grid-auto-rows: 3fr; */
-  grid-gap: 100px;
-  margin-top: 50px;
-  
-  
-}
-.box{
-  color: rgb(208, 226, 43);
-  padding-right: 50px;
-  /* background-color: rgb(29, 16, 175); */
-  text-align: center;
-  border-radius: 70px;
-  
-}
-.box-c{
- 
-display: grid;
-background-color: rgb(17, 17, 15);
-grid-template-columns: 1fr   ;
-align-items:center;
-margin-left: 510px;
-border-radius: 50px;
-}
-.car{
-  height: 60px;
- 
-}
-.carr{
-  align-content: center;
-  justify-content: normal;
-}
-.btns{
-  background-color: rgb(201, 221, 22);
-  border-radius: 100px;
-  height: 35px;
-  width: 100px;
-  margin-left: 60px;
-  margin-bottom: 10px;
+  font-size: 35px;
+  font-family: "Reggae One", cursive;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    display: grid;
-    
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    padding-bottom: 50px; } }
-/* 
-<div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-50">
-            <a href="#!"><img class="card-img-top" src="imagenes/${lenceria.imagen}" alt="..." /></a>
-            <div class="">
-                <h4 class="card-title"><a href="#!">${lenceria.nombre}</a></h4>
-                <h5>$ ${lenceria.precio}</h5>
-                <p class="card-text">${lenceria.descripcion}</p>
-            </div>
-            <button class="btn btn-dark" onclick='agregarCarrito(${JSON.stringify(lenceria)})'>Comprar</button>   
-            <div class="card-footer"><small class="text-muted">★ ★ ★ ★ ☆</small></div>
-        </div>
-    </div>  */
+.btnp {
+  display: flex;
+  color: rgb(155, 50, 24);
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-family: "Reggae One", cursive;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+span {
+  display: flex;
+  color: rgb(155, 50, 24);
+  margin-bottom: 10px;
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-family: "Reggae One", cursive;
+}
+
+/* padding-bottom: 50px;  */
+
+.imgCarrito {
+  width: 140px;
+  margin: 30px;
+}
+button {
+  font-size: 15px;
+  border-radius: 50px;
+  background-color: rgb(255, 136, 0);
+  color: rgb(14, 10, 6);
+}
+.modal-header {
+  background-color: rgb(0, 0, 0, 0.4);
+  border-radius: 50px;
+}
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+p {
+  color: rgb(255, 136, 0);
+}
+h5 {
+  color: rgb(255, 136, 0);
+  margin-left: 150px;
+  font-family: "Reggae One", cursive;
+  font-size: 30px;
+}
+.carr {
+  margin-right: 100px;
+  font-size: 20px;
+  color: rgb(255, 136, 0);
+}
+.btn-close {
+  color: rgb(255, 136, 0);
+  font-size: 23px;
+  height: 50px;
+}
+.navbar-brand {
+  color: rgb(155, 50, 24);
+  font-size: 20px;
+  font-family: "Reggae One", cursive;
+  margin-bottom: 50px;
+}
+.acum {
+  margin-right: 50px;
+  height: 70px;
+  
+}
+.btnr {
+  border-radius: 50%;
+
+  background-color: rgb(0, 0, 0);
+  font-family: "Reggae One", cursive;
+  /* position: fixed; */
+  padding-right: 10px;
+  margin-bottom: 58px;
+  margin-left: 125px;
+  position: absolute;
+}
+small {
+  font-size: 13px;
+  color:orangered
+}
+.flor{
+  width: 90px;
+  margin-right: 10px;
+  margin-left: 100px;
+}
