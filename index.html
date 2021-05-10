@@ -6,51 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <title>Mylingerie</title>
-
-  <!-- Favicon-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <title>Mylingerie</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="css/cero.css">
 </head>
-  
-  <!-- Core theme CSS (includes Bootstrap)-->
+
+<!-- Core theme CSS (includes Bootstrap)-->
+<nav class="navbar">
+
+  <div class="container-fluid d-flex">
+    <h3 class="navbar-brand" href="#">
+
+      <img class="flor" src=/imagenes/flor.png alt=" class=" d-inline-block align-text-top">
+      My Lingerie
+      <h3 />
+      <button class="btnr" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button"><small
+          id="numeroCarrito">0</small></button>
+      <img class="acum" src="/imagenes/carrito-de-compras.svg">
+  </div>
 
 
-<body>
-  <nav class="navbar navbar-light bg-light">
-    
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        My Lingerie
-      </a>
-      <button  class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button">Carrito<small id="numeroCarrito">0</small></button> 
-    </div>
-    
-    <i class="fas fa-user"></>
-  </nav>
-  
+</nav>
+
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="staticBackdropLabel">Tus Productos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
       </div>
       <div id="modalProductos" class="modal-body">
-        
+
       </div>
       <div class="modal-footer">
-        <span id="totalCarrito" class="carr">$ 0</span>
-        <button type="button" onclick="vaciarCarrito()" class="btns btn-primary">Vaciar</button>
-        <button type="button" class="btns btn-primary">Pagar</button>
+        <span id="totalCarrito" class="carr">Total $ 0</span>
+        <button type="button" onclick="vaciarCarrito()" class="btns btn-warning">Vaciar</button>
+        <button type="button" class="btns btn-warning">Pagar</button>
       </div>
     </div>
   </div>
@@ -58,39 +58,26 @@
 
 
 
-    
-    
-    
-    
-  
-  
-  
-  <div class="cero">
-    
-    <div id="containerProductos">
-      <!-- <span class="tittle">Black</span>
-      <img  src="/imagenes/len2.jpg " alt="">
-          <button class="btn">Comprar</button>
-          <span>$ 7777</span>
-        </div>   -->
-        
-    </div> 
-    
-    <span id="totalCarrito"></span>
-   
-    <!-- <p id="carritoDeCompras"></p> -->
-    
+<div class="cero">
+</div>
+<div id="containerProductos">
+</div>
+<span id="totalCarrito"></span>
 
-    
-    
-    <script src="js/main.js"></script>
+<body>
+  <!-- <p id="carritoDeCompras"></p> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
+
+
+  <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
 </body>
 
 </html>

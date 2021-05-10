@@ -32,7 +32,7 @@ productos.forEach(lenceria =>{    // creo parametro "lenceria" que seria cada un
     <span class="tittle">${lenceria.nombre}</span>
     <img src="imagenes/${lenceria.imagen}" alt="">
     <span>Precio$ : ${lenceria.precio}</span> 
-    <button class="btn"  onclick='agregarCarrito(${JSON.stringify(lenceria)})'>Comprar</button></div>
+    <button class="btnp"  onclick='agregarCarrito(${JSON.stringify(lenceria)})'>Comprar</button></div>
 `} )
 
 document.getElementById('containerProductos').innerHTML = cardsTotales;
@@ -100,7 +100,7 @@ function borrarElemento(producto) {
 function vaciarCarrito(){
     arrayCarrito= [];
     document.getElementById('modalProductos').innerHTML = '';
-    document.getElementById('totalCarrito').innerHTML = '$ 0';
+    document.getElementById('totalCarrito').innerHTML = ' $ 0';
     document.getElementById('numeroCarrito').innerHTML = 0;
 }
 
